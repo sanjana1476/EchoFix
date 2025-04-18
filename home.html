@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EchoFix - Community Issue Resolution Platform</title>
+    <link rel="stylesheet" href="home-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+    <img src="logo.png" alt="EchoFix Logo" class="logo">
+    <span></span>
+</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How it Works</a>
+            <div class="auth-buttons">
+                <a href="index.html" class="btn-login">Login</a>
+                <a href="index.html" class="btn-signup">Sign Up</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+    <h1>Streamline your community issues</h1>
+            <p>A modern platform for managing and resolving community maintenance issues efficiently</p>
+            <div class="cta-buttons">
+                <a href="index.html" class="btn-primary">Get Started</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="features">
+        <h2>Why Choose EchoFix?</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <i class="fas fa-tasks"></i>
+                <h3>Easy Issue Tracking</h3>
+                <p>Submit and track maintenance issues with real-time updates</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-camera"></i>
+                <h3>Photo Documentation</h3>
+                <p>Add photos to your complaints for better clarity</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-user-shield"></i>
+                <h3>Secure Access</h3>
+                <p>Separate portals for residents and management</p>
+            </div>
+            <div class="feature-card">
+                <i class="fas fa-clock"></i>
+                <h3>Quick Resolution</h3>
+                <p>Efficient worker assignment and status tracking</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <h3>Report an Issue</h3>
+                <p>Submit your maintenance issue with details and photos</p>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <h3>Quick Assignment</h3>
+                <p>Management assigns the right worker for the job</p>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <h3>Track Progress</h3>
+                <p>Monitor the status of your issue in real-time</p>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <h3>Issue Resolved</h3>
+                <p>Get notification when your issue is resolved</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>EchoFix</h4>
+                <p>Making community maintenance simple and efficient</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <a href="#features">Features</a>
+                <a href="#how-it-works">How it Works</a>
+                <a href="index.html">Login</a>
+                <a href="index.html">Sign Up</a>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: support@echofix.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 EchoFix. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
