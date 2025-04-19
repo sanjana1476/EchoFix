@@ -2,6 +2,8 @@
 const ADMIN_CREDENTIALS = {
     email: 'admin@echofix.com',
     password: 'admin123'
+    email:'sanjana@echofix.com',
+    password:'sanju'
 };
 
 // Get data from localStorage
